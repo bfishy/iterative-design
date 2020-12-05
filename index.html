@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <title>Iterative Design</title>
+</head>
+
+<body>
+
+  <!-- <div id="title" class="container-fluid bg-white py-5"> -->
+  <div class="d-flex flex-column justify-content-center align-items-center bg-white py-5">
+    <h1 class="title display-2 mx-5 mb-5 pb-2"><b>Iterative Design</b></h1>
+    <img src="img/div.png" alt="text divider" class="mb-5" style="width: 3.5rem; height: 1rem;">
+    <h3 class="subtitle text-center mx-5"> Creating App Design for a Startup</h3>
+  </div>
+  <!-- </div> -->
+  <div class="d-flex flex-column blankets"></div>
+
+  <div id="overview" class="container-fluid bg-white text-center py-5">
+    <h3 class="pb-5 display-4">Startup Overview</h3>
+    <img src="img/div_alt.png" alt="text divider" class="mb-5" style="width: 3.5rem; height: 1rem;">
+    <h3 class="pb-5 display-3 font-weight-normal">Statiq</h3>
+    <img src="img/div_alt.png" alt="text divider" class="divider" style="margin: auto; width: 3.5rem; height: 1rem;">
+    <div class="container blurb text-left mt-5">
+      <p class="lead ma-5">
+        Statiq is a company based in the New Delhi suburb of Gurugram, India, and founded in October 2019.
+      </p>
+      <p class="lead ma-5">
+        It allows individuals and buildings to provide EV (electric vehicle) charging points through its app.
+      </p>
+      <p class="lead ma-5">
+        Its motivation is to mitigate air pollution from automobile exhaust by encouraging the use of EVs.
+      </p>
+      <p class="lead ma-5">
+        Statiq has a multi-revenue model. End users buy a subscription from Statiq to use the network and pay a
+        fee per charging session, which gets split between Statiq and the property owner. This gives
+        landlords who install the stations an incremental revenue boost.
+      </p>
+      <p class="lead ma-5">
+        Statiq has installed more than 150 charging stations in Delhi, Bangalore, and Mumbai and the surrounding
+        environments.
+      </p>
+    </div>
+  </div>
+
+  <div id="overview" class="container-fluid bg-white text-center py-5">
+    <h3 class="pb-5 display-3 font-weight-normal">Design</h3>
+    <img src="img/div_alt.png" alt="text divider" class="divider" style="margin: auto; width: 3.5rem; height: 1rem;">
+    <div class="container blurb text-left mt-5">
+      <p class="lead ma-5">
+        We decided to design a mobile app for the startup due to the following reasons:
+      <ul>
+        <li> Users will most likely be using the app when they're on the road,
+          looking for EV-charging stations nearby.</li>
+        <li>Users can use the map and navigation features of the app to get to the chosen
+          stations using the phone.</li>
+      </ul>
+      </p>
+      <h3><b>Features: </b></h3>
+      <p class="lead ma-5">
+        The app would have a Google Maps-like interface to show various charging options near the user's current location and show
+        the availability, waiting time, distance, rating, types of EV that can be charged, and a
+        navigation feature to bring the user to the station.
+      </p>
+      <h3><b>Target Users: </b></h3>
+      <p class="lead ma-5">
+        Anyone who owns an electric vehicle could benefit from this interface as it helps them locate charging stations faster and make reservations easier.
+      </p>
+    </div>
+
+    <div class="container blurb text-left mt-5">
+      <h2><b>Initial Sketches</b></h2>
+      <hr>
+    </div>
+    <div class="container blurb mt-5">
+      <div class="row">
+        <div class="sketch">
+          <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>Sketch 1</b></h3>
+          <img src="img/sketches/Sketch1.1.png" width="440"><img src="img/sketches/Sketch1.2.png" width="448"><img
+            src="img/sketches/Sketch1.3.png" width="218">
+          <br><br><br><br>
+        </div>
+        <div class="sketch">
+          <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>Sketch 2</b></h3>
+          <img src="img/sketches/Sketch2.png" width="1100">
+        </div>
+        <div class="sketch">
+          <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>Sketch 3</b></h3>
+          <img src="img/sketches/Sketch3.1.png" width="550"><img src="img/sketches/Sketch3.2.png" width="550">
+          <br><br><br><br>
+        </div>
+        <div class="sketch">
+          <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>Sketch 4</b></h3>
+          <img src="img/sketches/Sketch4.1.png" width="365">
+          <img src="img/sketches/Sketch4.2.png" width="365">
+          <img src="img/sketches/Sketch4.3.png" width="365">
+        </div>
+      </div>
+    </div>
+
+    <div class="container blurb text-left mt-5">
+      <h2><b>Lo-Fi Wireframes</b></h2>
+      <hr>
+    </div>
+    <div class="container blurb text-left mt-5">
+      <p class="lead ma-5">
+        We merged selected pages & designs from each set of sketches to build an interface that demonstrates our solution to the
+        startup's goal of reducing pollution by connecting the users & owners of EV charging stations.
+      </p>
+      <p class="lead ma-5">
+        The sets of sketches are diverse and creative, and each brings distinct components and ideas, such as map,
+        navigation, profile, reservation, and history pages, as well as sub-components such as spots available and
+        waiting time. <br>
+        We incorporated all of these critical features into once interface, as shown below.</p>
+      <p class="lead ma-5">
+        We categorized each functionality into groups, and designed a navigation bar at the bottom that contains the 3 main feature groups: the <b>Map Page</b>, <b>Profile Page</b>, and <b>History Page</b>.
+        <br><br></p>
+      <div class="row_wireframes">
+        <div class="wireframes">
+          <img src="img/wireframes/Wireframe1.png" width="500"><img src="img/wireframes/Wireframe2.png" width="511">
+          <img src="img/wireframes/Wireframe3.png" width="500"><img src="img/wireframes/Wireframe4.png" width="248.5">
+        </div>
+      </div>
+    </div>
+
+    <div class="container blurb text-left mt-5">
+      <h2><b>Interactive Hi-Fi Mockup</b></h2>
+      <hr>
+    </div>
+    <div class="container blurb mt-5">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1120" height="630"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVN8DjG48uh8Zpid1AMPJPp%2FStatiq-Hi-fi%3Fnode-id%3D4%253A4%26viewport%3D333%252C306%252C0.2295447289943695%26scaling%3Dscale-down"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="container blurb text-left mt-5">
+      <h2><b>Studio Critique</b></h2>
+      <hr>
+    </div>
+    <div class="container blurb mt-5">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6" style="text-align:left;">
+          <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>Feedback</b></h3>
+          <p class="lead ma-5" style="text-align:left;">
+            Interface Design
+          <ul>
+            <li>It has good affordances and is easy to navigate.</li>
+          </ul>
+          </p>
+          <p class="lead ma-5">
+            Confusing Waiting Time
+          <ul>
+            <li>Clarification needed on why it is necessary to show waiting time: if there are empty spots, shouldn’t
+              there be no waiting time?</li>
+          </ul>
+          </p>
+          <p class="lead ma-5">
+            History Page
+          <ul>
+            <li>Suggestion to change the graph of monthly spendings to a map of locations/stations visited.</li>
+          </ul>
+          </p>
+          <p class="lead ma-5">
+            Ambiguity Around Navigation
+          <ul>
+            <li>When users reach the end of the reservation, they are provided with a “Swipe Up To Navigate” option.
+            </li>
+            <li>This is a bit confusing because users are unsure whether that refers to a navigation mode or if it just
+              brings them back to the map homepage.</li>
+          </ul>
+          </p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6" style="text-align:left;">
+          <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>Improvements Made</b></h3>
+          <p class="lead ma-5">
+            <b style="color: #2A99A3;">Fix:</b> Waiting Time
+          <ul>
+            <li>Stations that have available spots will show “No Waiting Time.” </li>
+            <li>Only for stations that are currently full will it show an estimated waiting time.</li>
+          </ul>
+          <p class="lead ma-5">
+            <b style="color: #497CCC;">Keep:</b> History Page
+          <ul>
+            <li>We decided to stick with showing a monthly cost estimator because we felt like it was a more helpful
+              service for customers.</li>
+            <li>Since we are providing an application that allows people to pay to charge EVs, it might be more helpful
+              to show them how much they are spending as well.</li>
+            <li>While there also might be some users who would like to see which locations they have visited, we felt
+              like it is not as crucial as a function, and could still be done by looking through their own charging
+              history (which lists the stations they charged at).</li>
+          </ul>
+          <p class="lead ma-5">
+            <b style="color: #2A99A3;">Fix:</b> Ambiguity Around Navigation
+          <ul>
+            <li>We changed the directions from “Swipe Up To Navigate” to “Swipe Up to Enter Navigation Mode” to make it
+              clearer that it is a separate functionality (and not just returning back to homepage).</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="overview" class="container-fluid bg-white text-center py-5">
+      <h3 class="pb-5 display-3 font-weight-normal">User Testing</h3>
+      <img src="img/div_alt.png" alt="text divider" class="divider" style="margin: auto; width: 3.5rem; height: 1rem;">
+
+      <div class="container blurb text-left mt-5">
+        <h2><b>Testing Instructions & Post-Test Questions</b></h2>
+        <hr>
+      </div>
+      <div class="container blurb mt-5">
+        <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>Main Task</b>
+          <p class="lead mt-3">Make a reservation at Park Station for a Type 2 EV charger at 3:45pm</p>
+        </h3>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6" style="text-align:left;">
+            <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>Sub-Tasks</b></h3>
+            <p class="lead ma-5" style="text-align:left;">
+            <ol>
+              <li>Start the app using the "Sign In" option.</li>
+              <li>Choose "Park Station" as your desired EV charging station.</li>
+              <li>Check if the selected EV Charge Type is "Type 2." If not, select it. Then, reserve.</li>
+              <li>Reserve the time slot that begins at 3:45 pm & confirm the reservation.</li>
+              <li>Stop at the page that shows "Reservation Confirmed."</li>
+            </ol>
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6" style="text-align:left;">
+            <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>Response Questions</b></h3>
+            <p class="lead ma-5" style="text-align:left;">
+            <ol>
+              <li>Without clicking on them, what do you think the buttons/icons on the bottom navigation bar do?</li>
+              <li>On the page showing "Reservation Confirmed," if you were looking to go
+                to the charging station, what action would you take next?</li>
+              <li>Throughout the process, was it clear & intuitive which buttons/items to click on in order to complete
+                the task and move on to the next step?</li>
+            </ol>
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-4" style="text-align:left;">
+            <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>Post-Testing Questionnaire</b></h3>
+            <p class="lead ma-5" style="text-align:left;">
+            <ol>
+              <li>What did you like about this prototype?</li>
+              <li>Is there anything particularly confusing about this prototype?</li>
+              <li>What would you change to improve the prototype (making it easier to use/navigate)?</li>
+              <li>Is there anything you want to talk about that has not been asked?</li>
+            </ol>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container blurb text-left mt-5">
+        <h2><b>Results</b></h2>
+        <hr>
+      </div>
+      <div class="container blurb mt-5">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6" style="text-align:left;">
+            <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>User 1:</b> supermild<br><br><a
+                style="text-decoration:none"
+                href="https://drive.google.com/file/d/1EIfgJtPRh5X9NBv6TVe_cmBYm0QtbjAZ/view?usp=sharing"
+                target="_blank" class="text-light btn-lg mt-3">Link to Video</a>
+            </h3>
+            <p class="lead ma-5">
+              Tasks
+            <ul>
+              <li><b>Tasks 1-5:</b> Successfully completed without hesitation.</li>
+            </ul>
+            </p>
+            <p class="lead ma-5">
+              Response Questions
+            <ol>
+              <li> Bottom left button: goes back to map / middle button: time until reservation or
+                time
+                I have booked / bottom right button: profile</li>
+              <li>Press map button or swipe up to navigate button.</li>
+              <li>Clear and simple to follow.</li>
+            </ol>
+            <p class="mt-2 ml-4"><b>Final comments:</b> Very well-designed system easy to use, didn’t need the sub-task instructions to achieve the main objective</p>
+            </p>
+            <p class="lead ma-5">
+              Post-Testing Questionnaire
+            <ol>
+              <li> Well designed and very intuitive.</li>
+              <li> Not too sure what the history icon would show, but it's minor.</li>
+              <li> Be clearer with the words "Swipe up to navigate". What does this actually do? Does
+                it take you back to the map of chargers, or does it map out/navigate you to the charging station?
+              </li>
+              <li> No</li>
+            </ol>
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6" style="text-align:left;">
+            <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>User 2:</b> koala2109<br><br><a
+                style="text-decoration:none"
+                href="https://drive.google.com/file/d/13OD-ygl_zDTnGJn5TUaUVfk6QUssDS3o/view?usp=sharing"
+                target="_blank" class="text-light btn-lg mt-3">Link to
+                Video</a>
+            </h3>
+            <p class="lead ma-5">
+              Tasks
+            <ul>
+              <li><b>Tasks 1-5:</b> Went a little fast between steps 1-2 but successfully completed without hesitation.
+              </li>
+            </ul>
+            </p>
+            <p class="lead ma-5">
+              Response Questions
+            <ol>
+              <li> Bottom left button: show map / middle button: restart to homepage or sign out /
+                bottom right button: profile</li>
+              <li> First chose to click the map button but saw swipe up to navigate button. After
+                figuring
+                out that the swipe did not work, he clicked the map button.</li>
+              <li> Clear and straightforward. Easy interface.</li>
+            </ol>
+            <p class="mt-2 ml-4"><b>Final comments:</b> None</p>
+            </p>
+            <p class="lead ma-5">
+              Post-Testing Questionnaire
+            <ol>
+              <li>Easy to navigate, good and colourful interface.</li>
+              <li>Nothing in particular that would confuse users after using it once.</li>
+              <li>Consider adding names of the icons on the bottom of the screen.</li>
+              <li>Whether it requires a good internet connection or a slow internet connection would
+                be still suitable. As when you are driving you can end up in the area with a very poor connection.</li>
+            </ol>
+            </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6" style="text-align:left;">
+            <h3 class="pa-5 pb-3 my-3 display-5 text-center"><b>User 3:</b> HonestPonest<br><br><a
+                style="text-decoration:none"
+                href="https://drive.google.com/file/d/1CJ4mssn1Z6kLo8hsP4cuMLFf7V_u7Pup/view?usp=sharing"
+                target="_blank" class="text-light btn-lg mt-3">Link to Video</a>
+            </h3>
+            <p class="lead ma-5">
+              Tasks
+            <ul>
+              <li><b>Tasks 1-5:</b> Went a little fast between steps 1-2 but successfully completed without hesitation.
+              </li>
+            </ul>
+            </p>
+            <p class="lead ma-5">
+              Response Questions
+            <ol>
+              <li>Bottom left button: show map / middle button: clockish icon can actually be
+                appointment / bottom right button: profile</li>
+              <li>Checked which navigation button works first, and clicked the map button after
+                figuring
+                out that swipe to navigation button does not work. He hopes that the app has a GPS tool that shows the
+                location of charging stations after choosing a certain station.</li>
+              <li>Everything was straightforward and easy to understand. Recommends showing station
+                information (charge types, slots left, what charging types are left) next to the station location
+                instead
+                of showing them on the bottom of the map.</li>
+            </ol>
+            <p class="mt-2 ml-4"><b>Final comments:</b> Very well-designed system easy to use, but not sure if the savings history in
+              the history page and the payment information in the profile page are relevant to the purpose of the
+              application.</p>
+            </p>
+            <p class="lead ma-5">
+              Post-Testing Questionnaire
+            <ol>
+              <li>It's extremely simple and easy to use.</li>
+              <li>The payment information parts of the app. For an app about reserving times to
+                charge my car, I don't know whether I'd add any information regarding how I pay.</li>
+              <li>Having a UI bubble above each location saying what chargers are available, how many
+                slots are available, and how long the waiting time would be instead of the current info bubbles at the
+                bottom.</li>
+              <li>I spoke about it a bit during the recording and first question, but I don't
+                understand the purpose of payment information. Unless I'm only paying for X minutes of charge time ahead
+                of me arriving, I only see the app being used to find places to charge my car.</li>
+            </ol>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container blurb text-left mt-5">
+        <h2><b>User Testing Analysis</b></h2>
+        <hr>
+      </div>
+      <div class="container blurb mt-5 text-left">
+        <h3 class="pa-5 pb-3 my-3 display-5 text-left"><b>Task Breakdown</b></h3>
+        <p class="lead ma-5">
+          The main task we gave was for the users to complete a reservation procedure, which is the main functionality of our app.
+        </p>
+        <p class="lead ma-5">
+          We broke down our main task into sub-tasks, which are actions that users should take on each screen in order to successfully make a reservation
+        </p>
+        <p class="lead ma-5 mb-5">
+          We observed that users typically made <b>little to no errors</b> and have no trouble navigating through the process on their first try. Some of them are confused as to 
+          why a payment component of app is needed, but that is due to the fact that the business model of Statiq was not fully communicated to users as background knowledge 
+          before they started the test.
+        </p>
+        <h3 class="pa-5 pb-3 my-3 display-5 text-left"><b>Objective Completetion</b></h3>
+        <p class="lead ma-5">
+          The fact that most users were able to successfully complete the task on the first try, some even without needing to consult the sub-tasks, shows that 
+          the interface is intuitive enough and has good affordances that allows users to know how to go from one step to the next.
+        </p>
+        <p class="lead ma-5 mb-5">
+          This falls largely in line with our expectations based on the similar positive feedbacks received in the group crit studio. Some problems, such as more clarity regarding 
+          what the navigation function would look like, was also brought up during user testing. 
+        </p>
+        <h3 class="pa-5 pb-3 my-3 display-5 text-left"><b>Potential Changes</b></h3>
+        <p class="lead ma-5">
+          Besides changing the navigation text instructions from "Swipe Up to Naviage" to "Swipe Up to Enter Navigation Mode" to make it clear that navigation is a separate functionality 
+          that is different than the maps homepage, we could also consider adding an additional screen in our hi-fi mockup to showcase what the specific page would look like to users. 
+        </p>
+        <p class="lead ma-5">
+          We have also included the names of different functions under the icons in the bottom navigation bar, so the purpose of each icon and where it might take the user would be clear 
+          even to people who are using the application for the first time.
+        </p>
+      </div>
+
+      <footer class="bg-white text-center py-3">
+        <div class="container">
+          <br>
+        </div>
+      </footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
